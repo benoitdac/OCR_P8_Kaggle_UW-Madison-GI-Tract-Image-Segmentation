@@ -20,7 +20,7 @@ Les organisateurs ont mis à disposition des participants un [jeu de données](h
 # modèle 
 * Le modèle 1 ("baseline") utilise l'architecture "U-NET" pour segmenter les organes sur les clichés IRMs. Des couches de "Dropout" et de "BatchNormalisation" ont été ajoutées dans l'architecture permettant d'améliorer les métriques. 
 * le modèle 2 reprends le modèle de référence avec l'ajout d'une étape d'encodage et de décodage dans l'architecture et une résolution d'image en entrée de modèle plus importante d'un facteur 2, passant de 128x128x3 à 256x256x3. Ces modifications ont permis d'améliorer légèrement les métriques.
-* Le modèle 3 reprends les améliorations du modèle précédent avec l'ajout de la méthode de "Data Augmentation". Ceci a permis également d'améliorer les métriques
+* Le modèle 3 (modeèle final) reprends les améliorations du modèle précédent avec l'ajout de la méthode de "Data Augmentation". Ceci a permis également d'améliorer les métriques
 
 
 modeèle final : 
