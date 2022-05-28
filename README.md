@@ -17,7 +17,7 @@ Les participants au challenge ont été invités, du 14 avril au 14 juillet 2022
 # Données
 Les organisateurs ont mis à disposition des participants un [jeu de données](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation/data) comportant des clichés d’IRMs de vrais patients atteints de cancer. Ces clichés sont accompagnés d’annotations permettant de localiser sous formes de masques encodés avec le format RLE, les intestins et l’estomac. Chaque cas de ce concours est représenté par plusieurs ensembles de tranches d'analyse (chaque ensemble est identifié par le jour où l'analyse a eu lieu). 
 
-# modèle 
+# modèles
 * Le modèle 1 ("baseline") utilise l'architecture "U-NET" pour segmenter les organes sur les clichés IRMs. Des couches de "Dropout" et de "BatchNormalisation" ont été ajoutées dans l'architecture permettant d'améliorer les métriques. 
 * le modèle 2 reprends le modèle de référence avec l'ajout d'une étape d'encodage et de décodage dans l'architecture et une résolution d'image en entrée de modèle plus importante d'un facteur 2, passant de 128x128x3 à 256x256x3. Ces modifications ont permis d'améliorer légèrement les métriques.
 * Le modèle 3 (modeèle final) reprends les améliorations du modèle précédent avec l'ajout de la méthode de "Data Augmentation". Ceci a permis également d'améliorer les métriques
